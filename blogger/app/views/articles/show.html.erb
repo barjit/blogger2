@@ -8,16 +8,20 @@
 <br />
 <br />
 <br />
+
+<p>
+	<% if @article.image.exists? %>
+	  <%= image_tag @article.image.url %>
+    <% end %>
+</p>
+
+<br />
+<br />
 <br />
 
 <p><%= @article.body %></p>
 
 <br />
-<br />
-<br />
-<br />
-
-
 <br />
 <br />
 <br />
